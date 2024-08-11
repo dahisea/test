@@ -105,8 +105,7 @@
                 .then(() => {
                     alert('验证码已发送');
                 })
-                .catch(error => {
-                    console.error('Error:', error);
+                .catch(() => {
                     alert('请求失败，请稍后重试');
                 });
         }
@@ -126,8 +125,7 @@
                         alert('验证码错误或已过期');
                     }
                 })
-                .catch(error => {
-                    console.error('Error:', error);
+                .catch(() => {
                     alert('请求失败，请稍后重试');
                 });
         }
